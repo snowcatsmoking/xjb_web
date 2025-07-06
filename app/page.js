@@ -6,8 +6,15 @@ export default function Home() {
     <div className="flex flex-col">
       {/* Hero区域 */}
       <section className="relative h-[70vh] min-h-[500px] bg-gradient-to-r from-blue-900 to-blue-700 text-white">
-        <div className="absolute inset-0 opacity-20 z-0 bg-blue-900">
-          {/* 暂时不使用背景图片，采用纯色背景 */}
+        <div className="absolute inset-0 opacity-20 z-0">
+          <Image 
+            src="/images/playpicture.png" 
+            alt="船舶背景" 
+            fill 
+            style={{ objectFit: 'cover' }}
+            priority
+            className="bg-blend-overlay"
+          />
         </div>
         <div className="container mx-auto h-full flex flex-col justify-center px-4 relative z-10">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
@@ -62,8 +69,14 @@ export default function Home() {
                 </svg>
               </Link>
             </div>
-            <div className="relative h-[400px] bg-gray-200 rounded-lg flex items-center justify-center">
-              <div className="text-gray-500 text-lg">公司形象图片</div>
+            <div className="relative h-[400px]">
+              <Image 
+                src="/images/playpicture.png" 
+                alt="公司形象" 
+                fill
+                style={{ objectFit: 'cover' }}
+                className="rounded-lg shadow-lg"
+              />
             </div>
           </div>
         </div>
@@ -139,8 +152,13 @@ export default function Home() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="relative h-64 bg-gray-200 flex items-center justify-center">
-                <div className="text-gray-500 text-lg">智能船舶导航系统</div>
+              <div className="relative h-64">
+                <Image 
+                  src="/images/playpicture.png" 
+                  alt="智能船舶导航系统" 
+                  fill
+                  style={{ objectFit: 'cover' }}
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">智能船舶导航系统</h3>
@@ -160,8 +178,13 @@ export default function Home() {
             </div>
             
             <div className="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="relative h-64 bg-gray-200 flex items-center justify-center">
-                <div className="text-gray-500 text-lg">船舶能源优化系统</div>
+              <div className="relative h-64">
+                <Image 
+                  src="/images/playpicture.png" 
+                  alt="船舶能源优化系统" 
+                  fill
+                  style={{ objectFit: 'cover' }}
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">船舶能源优化系统</h3>
@@ -181,8 +204,13 @@ export default function Home() {
             </div>
             
             <div className="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="relative h-64 bg-gray-200 flex items-center justify-center">
-                <div className="text-gray-500 text-lg">远程船舶监控平台</div>
+              <div className="relative h-64">
+                <Image 
+                  src="/images/playpicture.png" 
+                  alt="远程船舶监控平台" 
+                  fill
+                  style={{ objectFit: 'cover' }}
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">远程船舶监控平台</h3>

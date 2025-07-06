@@ -16,8 +16,14 @@ export default function Header() {
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         {/* 公司Logo和名称 */}
         <Link href="/" className="flex items-center space-x-3">
-          <div className="bg-blue-600 text-white font-bold text-xl w-10 h-10 flex items-center justify-center rounded-md">
-            XJB
+          <div className="w-10 h-10 rounded-md overflow-hidden relative">
+            <Image 
+              src="/images/playpicture.png" 
+              alt="新吉波Logo" 
+              fill
+              style={{ objectFit: 'cover' }}
+              priority
+            />
           </div>
           <div className="text-lg font-semibold text-gray-800 hidden md:block">
             新吉波船舶科技有限公司

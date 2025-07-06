@@ -7,12 +7,12 @@ export default function Home() {
       {/* Hero区域 */}
       <section className="relative h-[70vh] min-h-[500px] bg-gradient-to-r from-blue-900 to-blue-700 text-white">
         <div className="absolute inset-0 opacity-20 z-0">
-          <Image 
+        <Image
             src="/images/playpicture.png" 
             alt="船舶背景" 
             fill 
             style={{ objectFit: 'cover' }}
-            priority
+          priority
             className="bg-blend-overlay"
           />
         </div>
@@ -70,7 +70,7 @@ export default function Home() {
               </Link>
             </div>
             <div className="relative h-[400px]">
-              <Image 
+            <Image
                 src="/images/playpicture.png" 
                 alt="公司形象" 
                 fill
@@ -179,12 +179,12 @@ export default function Home() {
             
             <div className="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
               <div className="relative h-64">
-                <Image 
+          <Image
                   src="/images/playpicture.png" 
                   alt="船舶能源优化系统" 
                   fill
                   style={{ objectFit: 'cover' }}
-                />
+          />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">船舶能源优化系统</h3>
@@ -205,7 +205,7 @@ export default function Home() {
             
             <div className="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
               <div className="relative h-64">
-                <Image 
+          <Image
                   src="/images/playpicture.png" 
                   alt="远程船舶监控平台" 
                   fill
